@@ -1,0 +1,6 @@
+{
+    "image": "technosystem/dartiq:latest",
+    "python_modules": [
+        "modules/artiq"
+    ]
+}

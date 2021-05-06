@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+if [ -z ${XILINX_VIVADO+x} ]
+then 
+    echo "Xilinx Vivado is not available! Please source settings64.sh first."
+    exit -1
+fi
+
+dartiq run "python -m artiq.gateware.targets.kasli_generic gw/$1.json"
+dartiq run "artiq_ddb_template gw/$1.json >> experiments/ddb-$1.py"
+
+cp artiq_kasli/kasli-$1/gateware/top.bit artiq_kasli/kasli-$1/top.bit
+cp artiq_kasli/kasli-$1/software/bootloader/bootloader.bin artiq_kasli/kasli-$1/bootloader.bin
+cp artiq_kasli/kasli-$1/software/runtime/runtime.fbi artiq_kasli/kasli-$1/runtime.fbi

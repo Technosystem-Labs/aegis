@@ -1,0 +1,59 @@
+{
+    "target": "kasli",
+    "variant": "kasli-aegis-1tc1",
+    "hw_rev": "v2.0",
+    "base": "standalone",
+    "core_addr": "192.168.1.70",
+    "rtio_frequency": 100e6,
+    "ext_ref_frequency": 10e6,
+    "peripherals": [
+        {
+            "type": "dio",
+            "ports": [0],
+            "edge_counter": true,
+            "bank_direction_low": "input",
+            "bank_direction_high": "input"
+        },
+        {
+            "type": "dio",
+            "ports": [1],
+            "edge_counter": true,
+            "bank_direction_low": "input",
+            "bank_direction_high": "input"
+        },
+        {
+            "type": "dio",
+            "ports": [3],
+            "edge_counter": true,
+            "bank_direction_low": "input",
+            "bank_direction_high": "input"
+        },
+        {
+            "type": "dio",
+            "ports": [4],
+            "edge_counter": true,
+            "bank_direction_low": "input",
+            "bank_direction_high": "input"
+        },
+        {
+            "type": "fastino",
+            "ports": [5]
+        },
+        {
+            "type": "hvamp",
+            "ports": [7]
+        },
+        {
+            "type": "hvamp",
+            "ports": [8]
+        },
+        {
+            "type": "hvamp",
+            "ports": [9]
+        },
+        {
+            "type": "hvamp",
+            "ports": [10]
+        }        
+    ]
+}

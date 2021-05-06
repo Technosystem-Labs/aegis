@@ -1,0 +1,3 @@
+[submodule "modules/artiq"]
+	path = modules/artiq
+	url = git@github.com:Technosystem-Labs/artiq.git
