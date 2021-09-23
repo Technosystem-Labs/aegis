@@ -1,3 +1,0 @@
-#!/bin/bash
-
-dartiq run "artiq_flash -t kasli -V $1 -d ./artiq_kasli erase gateware bootloader firmware start"
