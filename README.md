@@ -2,7 +2,7 @@
 
 ## Variants
 
-In all variants RTIO clock is 100 MHz and is based on 10 MHz external reference. 
+In all variants RTIO clock is 125 MHz and is based on 10 MHz external reference. 
 IP address is set to `192.168.1.70`.
 
 1. `1tc1`: 
