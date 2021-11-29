@@ -1,0 +1,15 @@
+{
+    "target": "kasli",
+    "variant": "kasli-aegis-demokit-satellite",
+    "hw_rev": "v2.0",
+    "base": "satellite",
+    "peripherals": [
+        {
+            "type": "dio",
+            "ports": [0],
+            "bank_direction_low": "output",
+            "bank_direction_high": "input",
+            "edge_counter": true
+        }
+    ]
+}

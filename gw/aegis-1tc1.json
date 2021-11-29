@@ -2,7 +2,7 @@
     "target": "kasli",
     "variant": "kasli-aegis-1tc1",
     "hw_rev": "v2.0",
-    "base": "standalone",
+    "base": "master",
     "core_addr": "192.168.1.70",
     "rtio_frequency": 125e6,
     "ext_ref_frequency": 10e6,
