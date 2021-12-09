@@ -1,6 +1,3 @@
 {
-    "image": "technosystem/dartiq:latest",
-    "python_modules": [
-        "modules/artiq"
-    ]
+    "image": "technosystem/dartiq:f0c50c80"
 }

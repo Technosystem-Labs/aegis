@@ -48,7 +48,7 @@ cleanup_gw:
 	find artiq_kasli/ -type d -name software -exec rm -rf {} +
 
 release_tarball:
-	tar -cvzf aegis-release-vX.X.X.tar.gz artiq_kasli experiments
+	tar -cvzf aegis-release-vX.X.X.tar.gz ./*
 
 clean:
 	rm -rf artiq_kasli
