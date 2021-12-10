@@ -25,20 +25,28 @@
             "ports": [3]
         },
         {
-            "type": "hvamp",
-            "ports": [5]
+            "type": "dio",
+            "ports": [5],
+            "bank_direction_low": "output",
+            "bank_direction_high": "output"
         },
         {
-            "type": "hvamp",
-            "ports": [6]
+            "type": "dio",
+            "ports": [6],
+            "bank_direction_low": "output",
+            "bank_direction_high": "output"
         },
         {
-            "type": "hvamp",
-            "ports": [7]
+            "type": "dio",
+            "ports": [7],
+            "bank_direction_low": "output",
+            "bank_direction_high": "output"
         },
         {
-            "type": "hvamp",
-            "ports": [10]
+            "type": "dio",
+            "ports": [10],
+            "bank_direction_low": "output",
+            "bank_direction_high": "output"
         }
     ]
 }
