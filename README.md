@@ -25,12 +25,12 @@ IP address is set to `192.168.1.70`.
    * 1x DIO BNC (8 channels total)
 ## Building firmware
 
-1. Install Xilinx Vivado
-2. Install DARTIQ: `python3 -m pip install dartiq`
-3. Execute `make <variant>.gw`
+1. Run ARTIQ development shell with (see [Developing ARTIQ](https://m-labs.hk/artiq/manual-beta/developing.html))
+2. Execute `make <variant>.gw`
 
 ## Flashing device
 
+1. Run ARTIQ development shell with (see [Developing ARTIQ](https://m-labs.hk/artiq/manual-beta/developing.html))
 1. Connect Kasli microUSB
 2. Execute `make <variant>.flash`
 
