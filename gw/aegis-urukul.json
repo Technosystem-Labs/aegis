@@ -1,0 +1,18 @@
+{
+    "target": "kasli",
+    "variant": "kasli-aegis-urukul",
+    "hw_rev": "v2.0",
+    "base": "master",
+    "core_addr": "192.168.1.70",
+    "rtio_frequency": 125e6,
+    "ext_ref_frequency": 10e6,
+    "peripherals": [
+        {
+            "type": "urukul",
+            "dds": "ad9910",
+            "ports": [0, 1],
+            "clk_sel": 2,
+            "synchronization": true
+        }
+    ]
+}

@@ -23,11 +23,17 @@ IP address is set to `192.168.1.70`.
    * 4x HVAMP_8CH
 5. `demokit-satellite` - satellite for 1T subsystem
    * 1x DIO BNC (8 channels total)
-## Building firmware
+6. `urukul` - standalone operation
+   * 1x Urukul AD9910
+
+## Environment setup
 
 1. Install Xilinx Vivado
-2. Install DARTIQ: `python3 -m pip install dartiq`
-3. Execute `make <variant>.gw`
+2. Enter ARTIQ development shell (see ARTIQ manual)
+
+## Building firmware
+
+Execute `make <variant>.gw`
 
 ## Flashing device
 
@@ -40,5 +46,6 @@ IP address is set to `192.168.1.70`.
 * For 5T as a two crate system use `experiments/device_db_5t.py`. 
 * For 5TC1 as standalone use `experiments/device_db_5tc1.py`.
 * For 5TC2 as standalone use `experiments/device_db_5tc2-standalone.py`.
+* For Urukul crate use `experiments/device_db_urukul.py`.
 
 Remeber that 5TC2 must be reflashed when switching from satellite / standalone.
