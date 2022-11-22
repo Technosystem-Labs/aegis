@@ -26,17 +26,12 @@ IP address is set to `192.168.1.70`.
 6. `urukul` - standalone operation
    * 1x Urukul AD9910
 
-## Environment setup
-
-1. Install Xilinx Vivado
-2. Enter ARTIQ development shell (see ARTIQ manual)
-
-## Building firmware
-
-Execute `make <variant>.gw`
+1. Run ARTIQ development shell with (see [Developing ARTIQ](https://m-labs.hk/artiq/manual-beta/developing.html))
+2. Execute `make <variant>.gw`
 
 ## Flashing device
 
+1. Run ARTIQ development shell with (see [Developing ARTIQ](https://m-labs.hk/artiq/manual-beta/developing.html))
 1. Connect Kasli microUSB
 2. Execute `make <variant>.flash`
 

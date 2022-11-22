@@ -2,3 +2,4 @@ artiq_kasli/**
 experiments/device_db_*.py
 aegis-release-*.tar.gz
 **.pyc
+**.tar.gz

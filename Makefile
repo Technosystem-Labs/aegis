@@ -53,6 +53,4 @@ release_tarball:
 clean:
 	rm -rf artiq_kasli
 	rm -rf experiments/device_db*
-	
-
 
