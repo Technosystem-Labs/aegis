@@ -5,6 +5,7 @@
     "base": "satellite",
     "core_addr": "192.168.1.70",
     "rtio_frequency": 125e6,
+    "sed_lanes": 16,
     "peripherals": [
         {
             "type": "dio",

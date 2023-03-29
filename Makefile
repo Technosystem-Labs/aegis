@@ -23,12 +23,12 @@ all: 5t.ddb 1t.ddb 1tc1.ddb 5tc1.ddb 5tc2-standalone.ddb 1tc1.gw 5tc1.gw 5tc2-sa
 	artiq_ddb_template -s 1 gw/aegis-demokit-satellite.json -s 2 gw/aegis-demokit-satellite.json gw/aegis-1tc1.json > experiments/device_db_1t.py
 	echo "$$ddbpatch" >> experiments/device_db_1t.py
 
-urukul.ddb 1tc1.ddb 5tc1.ddb 5tc2-standalone.ddb:
+urukul.ddb 1tc1.ddb 5tc1.ddb 5tc2-standalone.ddb demokit-master.ddb:
 	mkdir -p experiments
 	artiq_ddb_template gw/aegis-$(basename $@).json > experiments/device_db_$(basename $@).py
 	echo "$$ddbpatch" >> experiments/device_db_$(basename $@).py
 
-urukul.gw 1tc1.gw 5tc1.gw 5tc2-standalone.gw:
+urukul.gw 1tc1.gw 5tc1.gw 5tc2-standalone.gw demokit-master.gw:
 	python -m artiq.gateware.targets.kasli_generic gw/aegis-$(basename $@).json
 	cp artiq_kasli/kasli-aegis-$(basename $@)/gateware/top.bit artiq_kasli/kasli-aegis-$(basename $@)/top.bit
 	cp artiq_kasli/kasli-aegis-$(basename $@)/software/bootloader/bootloader.bin artiq_kasli/kasli-aegis-$(basename $@)/bootloader.bin
@@ -40,7 +40,7 @@ urukul.gw 1tc1.gw 5tc1.gw 5tc2-standalone.gw:
 	cp artiq_kasli/kasli-aegis-$(basename $@)/software/bootloader/bootloader.bin artiq_kasli/kasli-aegis-$(basename $@)/bootloader.bin
 	cp artiq_kasli/kasli-aegis-$(basename $@)/software/satman/satman.fbi artiq_kasli/kasli-aegis-$(basename $@)/satman.fbi
 
-urukul.flash 1tc1.flash 5tc1.flash 5tc2-satellite.flash 5tc2-standalone.flash demokit-satellite.flash:
+urukul.flash 1tc1.flash 5tc1.flash 5tc2-satellite.flash 5tc2-standalone.flash demokit-satellite.flash demokit-master.flash:
 	artiq_flash -t kasli -d ./artiq_kasli/kasli-aegis-$(basename $@) erase gateware bootloader firmware start
 
 cleanup_gw:

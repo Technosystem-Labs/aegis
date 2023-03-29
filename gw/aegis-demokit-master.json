@@ -1,8 +1,8 @@
 {
     "target": "kasli",
-    "variant": "kasli-aegis-demokit-satellite",
+    "variant": "kasli-aegis-demokit-master",
     "hw_rev": "v1.1",
-    "base": "satellite",
+    "base": "master",
     "sed_lanes": 16,
     "peripherals": [
         {
